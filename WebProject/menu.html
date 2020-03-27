@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JUW Menu </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<script> 
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideDown("slow");
+    });
+});
+
+</script>
+  <style>
+* {
+    box-sizing: border-box;
+}
+.text {
+ 
+  color: black;
+  font-size: 19px;
+  padding: 16px 32px;
+}
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.container {
+    position: relative;   
+}
+.container:hover .image {
+  opacity: 0.3;
+}
+.container:hover .middle {
+  opacity: 1;
+}
+.text {
+  color: black;
+  font-size: 19px;
+  padding: 16px 32px;
+}
+
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-sm bg-success">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a href="home.php"><img class="img-responsive" src="logo.png" height="80px" width="80px"></a>
+ </div>
+                   <ul class="nav navbar-nav navbar-right">
+				   	      <li><a href="menu.html" class="btn text-white" style="background-color:transparent">Menu</a></li>
+						  				   	      <li><a href="ourstory.html" class="btn text-white" style="background-color:transparent">Our Story</a></li>
+
+						  						  <li><a href="contact.php" class="btn text-white" style="background-color:transparent">Contact Us</a></li>
+
+				   	      <li><a href="login.php" class="btn text-white" style="background-color:transparent">Logout</a></li>
+
+				   </ul>
+ </div>
+</nav>
+<br><br>
+<div class="container">
+<center><h1 class="display-4">Our Menu </h1><center><hr></center><p>Our lunch menus reflect our commitment to the highest standards of nutrition while offering fresh, appetizing, and delicious foods. Our hot and cold lunches are carefully planned to include a variety of selections such as assorted fruits, whole grains, breads, vegetables, and fresh salads which students are sure to enjoy within the JUW University. Lunch meals are available at no charge to all students.</p>
+</center>
+</div>
+<br><hr><br>
+<div class="container-fluid">
+  <div class="row">
+  
+  <div class="column">
+  <div class="container">
+   <a href="specialdeals.html">
+    <img  class="image" src="images/menu7.jpg" alt="Fjords" style="width:370px;height:230px;"></a>
+    <div class="middle">
+    <div class="text">Special Deals </div>
+  </div>
+  </div>
+  </div> 
+  
+    <div class="column">
+  <div class="container">
+     <a href="desi.html">
+    <img class="image" src="images/menu1.jpg" alt="Fjords" style="width:370px;height:230px"></a>
+    <div class="middle">
+    <div class="text">Desi Food</div>
+  </div>
+  </div>
+  </div> 
+ 
+   <div class="column">
+  <div class="container">
+     <a href="chinese.html">
+    <img class="image" src="images/menu2.jpg" alt="Fjords" style="width:370px;height:230px"></a>
+    <div class="middle">
+    <div class="text">Chinese Food</div>
+  </div>
+  </div>
+  </div> 
+  </div>
+ 
+  
+<br><br>
+ 
+   <div class="row">
+  
+  <div class="column">
+  <div class="container">
+     <a href="junk.html">
+    <img class="image" src="images/menu3.jpg" alt="Fjords" style="width:370px;height:230px;"></a>
+    <div class="middle">
+    <div class="text">Junk Food </div>
+  </div>
+  </div>
+  </div> 
+  
+    <div class="column">
+  <div class="container">
+     <a href="starters.html">
+    <img class="image" src="images/menu6.jpg" alt="Fjords" style="width:370px;height:230px;"></a>
+    <div class="middle">
+    <div class="text">Starter</div>
+  </div>
+  </div>
+  </div> 
+ 
+   <div class="column">
+  <div class="container">
+     <a href="cake.html">
+    <img class="image" src="images/menu4.jpg" alt="Fjords" style="width:370px;height:230px;"></a>
+    <div class="middle">
+    <div class="text">Cakes & desserts</div>
+  </div>
+  </div>
+  </div> 
+</div>
+ 
+  </div>
+  <br><br><br><br><br><br>  
+  <hr>
+  <p class="text-center text-dark"> CopyRight All pages are Reserved<br>Location : JUW </p>
+<hr>
+</div>
+</body>
+</html>
